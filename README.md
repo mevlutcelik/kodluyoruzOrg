@@ -1,8 +1,6 @@
-# Mevlüt Çelik - Kodluyoruz.org ve Patika.dev Ödevleri
+# Mevlüt Çelik - Kodluyoruz.org ödevleri
 
 Bu repo [Kodluyoruz](https://www.kodluyoruz.org) eğitimleri süresince oluşturulan ödevleri barındırıyor.
-
-![github](https://github.com/Kodluyoruz/taskforce/raw/main/git/odev1/figures/github.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
