@@ -1,21 +1,28 @@
-## Insertion Short Projesi
-**Soru 1**
-```
-[22,27,16,2,18,6] -> Insertion Sort
-```
+# Insertion Sort
 
-1. Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
-2. Big-O gösterimini yazınız.
-3. Time Complexity: Average case: Aradığımız sayının ortada olması,Worst case: Aradığımız sayının sonda olması, Best case: Aradığımız sayının dizinin en başında olması.
-4. Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+### Proje 1
 
-**Cevap 1**
 
-***
+### [22,27,16,2,18,6] -> Insertion Sort
 
-**Soru 2**
-```
-[7,3,5,8,2,9,4,15,6] dizisinin Insertion Sort'a göre ilk 4 adımını yazınız.
-```
+### - Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
 
-**Cevap 2**
+   - Insertion sort en küçük elemanı başa alıp onunla en baştaki elemanın yerini değiştirir ve bu işlemi sıralama bitene kadar devam ettirir.
+
+   1. [2,27,16,22,18,6]
+   2. [2,6,16,22,18,27]
+   3. [2,6,16,18,22,27]
+-----------------------------
+### Big-O gösterimini yazınız.
+
+  
+  - Big-O Notation için n+(n-1)+(n-2)...buda n ardışık sayının toplamı formülünden n*(n+1)/2 bu formülü açtığımınzda (n^2+2n+1)/2 gelir bu formülde baskın olan n^2 olduğu için Big-o Notation n^2 oluyor.
+   
+--------------------------------------------------------------------------------------------
+### Dizi sıralandıktan sonra 18 sayısı hangi case kapsamına girer? Yazınız.
+- Time Complexity: 
+Average case: 16 
+Worst case: 27 
+Best case: 2
+
+- 18 için worst case diyebiliriz.
