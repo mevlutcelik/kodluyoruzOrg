@@ -25,7 +25,7 @@ public class Main {
         int toplam = matematik + fizik + kimya + turkce + tarih + muzik;
         double sonuc = toplam / 6;
         System.out.println("###########################################");
-        System.out.print("## Not ortalamanız: " + sonuc);
+        System.out.println("## Not ortalamanız: " + sonuc);
         System.out.print(sonuc >= 50 ? "Tebrikler, sınıfı geçtiniz!" : "Maalesef, sınıfta kaldınız!");
     }
 }
