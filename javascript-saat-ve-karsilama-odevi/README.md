@@ -1,0 +1,2 @@
+# Javscript Saat ve Karşılama ödevi
+![Javscript Saat ve Karşılama ödevi](https://patika-prod.s3-eu-central-1.amazonaws.com/userFiles/mevlut/projects/Rr4nhLnGJRcL9hLp9-javascript-saat-ve-karsilama-odevi)
