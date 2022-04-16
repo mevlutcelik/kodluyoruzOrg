@@ -1,0 +1,196 @@
+:root {
+    --white: #fff;
+    --black: #000;
+    --background-color: #f4f5f5;
+    --text-color: #1d2430;
+    --border-color: rgba(0, 0, 0, 0.05);
+    --primary-dark: #0a3669;
+    --primary-light: #e3eaf2;
+    --placeholder-color: #546a6a;
+    --error-bg: #ffd2d2;
+    --error-cl: #510000;
+    --warning-bg: #ffe5d2;
+    --warning-cl: #513200;
+    --success-bg: #c4ffc4;
+    --success-cl: #012f01;
+    --box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui, sans-serif;
+    line-height: 1.5;
+    -webkit-tap-highlight-color: transparent;
+}
+html,
+body {
+    background-color: var(--background-color, #080810);
+    color: var(--text-color, #e0e0e0);
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: var(--primary-dark, #99c9ff);
+    user-select: none;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white, #fff);
+    padding: 2rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: 0 0 4rem 4rem;
+}
+.footer {
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+
+.input {
+    position: relative;
+    width: 25rem;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    width: 100%;
+    background: initial;
+    border: 1px solid var(--border-color, rgba(255, 255, 255, 0.05));
+    padding: 0 2.75rem 0 0.875rem;
+    height: 2.5rem;
+    color: var(--text-color, #e0e0e0);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    outline: 0;
+    transition: all 0.3s;
+}
+
+input:focus {
+    box-shadow: 0 0 2px 2px var(--primary-dark);
+}
+
+::placeholder {
+    color: var(--placeholder-color, #42525c);
+}
+
+.input span {
+    position: absolute;
+    font-family: monospace;
+    font-weight: bold;
+    right: 5rem;
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.25rem;
+    font-size: 0.875rem;
+    border-radius: 0.25rem;
+    color: var(--primary-dark);
+    border: 1px solid var(--border-color);
+    user-select: none;
+}
+
+button {
+    height: 2.5rem;
+    border-right: 1px solid var(--border-color);
+    padding: 0 1rem;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    border-left: 1px solid transparent;
+    background: var(--primary-dark);
+    color: var(--primary-light);
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    user-select: none;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: var(--black);
+    color: var(--primary-light);
+}
+
+a:focus,
+button:focus {
+    box-shadow: 0 0 2px 2px var(--primary-dark);
+    border-color: #fff;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 4rem auto 2rem;
+}
+
+.title {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.title.hidden {
+    display: none;
+}
+
+.card {
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.card.active {
+    background-color: var(--primary-dark);
+    color: var(--primary-light);
+}
+
+.card.active span {
+    text-decoration: line-through;
+}
+
+.card .card-text {
+    font-size: 0.875rem;
+    margin-left: 0.5rem;
+}
+
+.card button {
+    background-color: var(--error-cl);
+    color: var(--error-bg);
+}
+
+.card button:focus {
+    box-shadow: 0 0 2px 2px var(--error-cl);
+    border-color: #fff;
+}
+
+.card.error {
+    background-color: var(--error-cl);
+    color: var(--error-bg);
+    padding: 1rem 1.5rem;
+}
+.card.warning {
+    background-color: var(--warning-cl);
+    color: var(--warning-bg);
+    padding: 1rem 1.5rem;
+}
